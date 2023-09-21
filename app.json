@@ -1,0 +1,61 @@
+{
+  "expo": {
+    "name": "aslih",
+    "slug": "aslih",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/iconAA.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/background.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "photosPermission": "Allow $(PRODUCT_NAME) to access your photos.",
+          "savePhotosPermission": "Allow $(PRODUCT_NAME) to save photos.",
+          "isAccessMediaLocationEnabled": "true"
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow $(PRODUCT_NAME) to use your location."
+        }
+      ],
+      "expo-router"
+    ],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/iconAA.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.FOREGROUND_SERVICE"
+      ],
+      "package": "com.lilyasantfreche.aslih"
+    },
+    "web": {
+      "favicon": "./assets/iconAA.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "3a29e1c6-a471-407b-a3b8-38b3eb81a44e"
+      }
+    },
+    "owner": "lilyasantfreche"
+  }
+}
